@@ -7,7 +7,7 @@
       </header>
       <p>{{ description }}</p>
       <nav>
-        <a :href="link" target="_blank">View Resource</a>
+        <a :href="link">View Resource</a>
       </nav>
     </base-card>
   </li>
@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  props: ['title', 'link', 'description'],
+  props: ['title', 'description', 'link'],
 };
 </script>
 
@@ -49,5 +49,4 @@ a:hover,
 a:active {
   color: #c89300;
 }
-
 </style>
