@@ -6,8 +6,8 @@
 
 <script>
 export default {
-  props: ['mode']
-}
+  props: ['mode'],
+};
 </script>
 
 <style scoped>
@@ -18,6 +18,7 @@ button {
   border: 1px solid #3a0061;
   color: white;
   cursor: pointer;
+  border-radius: 0.5rem;
 }
 
 button:hover,
@@ -30,6 +31,7 @@ button:active {
   background-color: transparent;
   color: #3a0061;
   border: none;
+  border-radius: 0.5rem;
 }
 
 .flat:hover,
