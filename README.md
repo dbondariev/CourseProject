@@ -1,39 +1,35 @@
-# Course Project
+# whatever
 
-## Summary
+This template should help get you started developing with Vue 3 in Vite.
 
-This project demonstrates a component in action with two tabs: Resources and Add/Delete Resources. It showcases how components work, how they are combined, and how to build an application that uses all these favorite features.
+## Recommended IDE Setup
 
-## Installation
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-To run this project, follow these steps:
+## Customize configuration
 
-1. Clone the repository:
+See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-git clone https://github.com/dbondariev/CourseProject.git
+## Project Setup
 
-2. Navigate into the project directory:
-
-cd  CourseProject
-
-3. Install the dependencies:
-
+```sh
 npm install
+```
 
-4. Start the server:
+### Compile and Hot-Reload for Development
 
-npm run serve
+```sh
+npm run dev
+```
 
+### Compile and Minify for Production
 
-## Demo
+```sh
+npm run build
+```
 
-You can view a live demo of the project at [Demo Link](<insert_demo_link_here>).
+### Lint with [ESLint](https://eslint.org/)
 
-## Features
-
-- Resource Tab: Displays all the resources.
-- Add/Delete Resources: Allows you to add new resources and delete existing ones.
-
-## How it works
-
-The application is built using various components that are combined to create a cohesive user experience. Each component has its own functionality and they all work together to provide the overall functionality of the application.
+```sh
+npm run lint
+```
