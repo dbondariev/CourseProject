@@ -1,22 +1,12 @@
 <template>
-  <ul>
-    <learning-resource
-      v-for="resource in storedResources"
-      :key="resource.id"
-      :resource="resource"
-      :title="resource.title"
-      :link="resource.link"
-      :description="resource.description"
-    ></learning-resource>
-  </ul>
+  <stored-resources :stored-resources="storedResources"></stored-resources>
 </template>
 
 <script>
-import LearningResource from './components/learning-resources/LearningResource.vue';
-
+import StoredResources from './components/learning-resources/StoredResources.vue';
 export default {
   components: {
-    LearningResource,
+    StoredResources,
   },
   data() {
     return {
@@ -46,24 +36,17 @@ export default {
 </script>
 
 <style>
-ul {
-  list-style: none;
-  padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
 }
-li {
-  margin-bottom: 1rem;
+
+html {
+  font-family: 'Roboto', sans-serif;
 }
-h1 {
-  margin-bottom: 0.5rem;
-}
-a {
-  color: #42b983;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-p {
+
+body {
   margin: 0;
 }
 </style>
